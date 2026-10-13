@@ -1,0 +1,7 @@
+// Prisma 7 reads the connection URL here instead of in schema.prisma.
+import { defineConfig } from "prisma/config";
+
+export default defineConfig({
+  schema: "prisma/schema.prisma",
+  datasource: { url: process.env.DATABASE_URL ?? "" },
+});

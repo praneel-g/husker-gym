@@ -14,11 +14,11 @@ import { DataDisplay } from "./components/DataDisplay";
 export const revalidate = 0; // no cache
 
 interface SectionPageProps {
-  params: { sectionSlug: string };
+  params: Promise<{ sectionSlug: string }>;
 }
 
 export default async function SectionPage({ params }: SectionPageProps) {
-  const section = await getSectionBySlug(params.sectionSlug);
+  const section = await getSectionBySlug((await params).sectionSlug);
   const records = await getRecentRecords({
     sectionId: section?.id!,
     // four weeks

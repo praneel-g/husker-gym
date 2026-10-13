@@ -1,0 +1,6 @@
+# Prisma's install scripts set up its engines and generate the client.
+allowBuilds:
+  "@prisma/client": true
+  "@prisma/engines": true
+  prisma: true
+  esbuild: true

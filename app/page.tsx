@@ -52,7 +52,6 @@ function Gym({ closedMessage, gym, className }: GymProps) {
         <div className="divide-y dark:divide-gray-800">
           {gym?.sections.map((section, index) => (
             <div key={section.id} className={"mt-2 py-2"}>
-              {/* @ts-expect-error Server Component */}
               <SectionSummary slug={section.slug} />
             </div>
           ))}

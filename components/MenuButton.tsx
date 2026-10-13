@@ -3,6 +3,7 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import Link from "next/link";
 import type { IconType } from "react-icons";
+import type { JSX } from "react";
 
 type MenuItemDisplay = {
   icon?: IconType;

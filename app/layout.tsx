@@ -1,5 +1,5 @@
 import { ClientProvider } from "@/components/ClientProvider";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
 

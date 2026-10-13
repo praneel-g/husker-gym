@@ -2,7 +2,7 @@ import { BackButton } from "@/components/BackButton";
 import { Title } from "@/components/Title";
 import { serializeListWithDate } from "@/date/utils";
 import { getTextBgColor } from "@/style/colors";
-import { addHours, subHours } from "date-fns/esm";
+import { addHours, subHours } from "date-fns";
 import Link from "next/link";
 import { CompactDayBarChart } from "../components/CompactDayBarChart";
 import { DayBarChart } from "../[sectionSlug]/components/DayBarChart";
