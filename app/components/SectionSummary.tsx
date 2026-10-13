@@ -57,7 +57,7 @@ export const SectionSummary = async ({ slug }: { slug: string }) => {
               <div className="text-sm">
                 <span
                   className={clsx(
-                    "font-semibold rounded py-[0.2px] px-0.5",
+                    "font-semibold rounded-sm py-[0.2px] px-0.5",
                     "dark:text-gray-300",
                     getTextBgColor(lastRecord.percent)
                   )}

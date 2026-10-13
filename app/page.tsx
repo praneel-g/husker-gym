@@ -49,9 +49,11 @@ function Gym({ closedMessage, gym, className }: GymProps) {
           {closedMessage}
         </section>
       ) : (
-        <div className="divide-y dark:divide-gray-800">
+        <div>
           {gym?.sections.map((section, index) => (
-            <div key={section.id} className={"mt-2 py-2"}>
+            // A top border after the margin, as divide-y drew it in Tailwind 3
+            // (Tailwind 4's divide-y puts a bottom border before the margin).
+            <div key={section.id} className="mt-2 py-2 border-t first:border-t-0 dark:border-gray-800">
               <SectionSummary slug={section.slug} />
             </div>
           ))}

@@ -118,7 +118,7 @@ export default function AboutPage() {
   return (
     <main className="max-w-[60ch] mx-auto p-5 space-y-3">
       <BackButton text="Back" />
-      <Title className="mt-4" level={1}>
+      <Title level={1}>
         About
       </Title>
       <p>

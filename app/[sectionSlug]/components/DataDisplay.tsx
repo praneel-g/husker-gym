@@ -14,7 +14,7 @@ export const DataDisplay = () => {
     <div>
       <span
         className={clsx(
-          "font-bold rounded p-[0.2px]",
+          "font-bold rounded-sm p-[0.2px]",
           getTextBgColor(displayData.percent)
         )}
       >

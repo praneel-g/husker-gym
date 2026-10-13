@@ -27,7 +27,7 @@ const TabsTrigger = forwardRef<
 >(({ className, ...props }, ref) => (
   <TabsPrimitive.Trigger
     className={clsx(
-      "min-w-[100px] flex-1 p-1 rounded-md data-[state=active]:bg-white data-[state=active]:shadow-sm dark:data-[state=active]:bg-black",
+      "min-w-[100px] flex-1 p-1 rounded-md data-[state=active]:bg-white data-[state=active]:shadow-xs dark:data-[state=active]:bg-black",
       "text-sm font-medium text-gray-600 dark:text-gray-500",
       className
     )}

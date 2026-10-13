@@ -23,7 +23,7 @@ export const MenuButton = ({ children, items }: MenuButtonProps) => {
   return (
     <div className="relative inline-block">
       <DropdownMenu.Root>
-        <DropdownMenu.Trigger className="focus:outline-none">
+        <DropdownMenu.Trigger className="focus:outline-hidden">
           {children}
         </DropdownMenu.Trigger>
         <DropdownMenu.Portal>
@@ -42,7 +42,7 @@ export const MenuButton = ({ children, items }: MenuButtonProps) => {
                   onClick={() => {
                     if (item.action) item.action();
                   }}
-                  className="text-sm flex items-center px-2 py-1 text-gray-700 focus:outline-none hover:bg-gray-200 rounded-md dark:hover:bg-gray-800"
+                  className="text-sm flex items-center px-2 py-1 text-gray-700 focus:outline-hidden hover:bg-gray-200 rounded-md dark:hover:bg-gray-800"
                 >
                   <div className="w-6 text-gray-500 text-xs ">
                     {Icon && <Icon className="text-current" />}
