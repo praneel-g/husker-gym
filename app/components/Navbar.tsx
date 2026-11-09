@@ -67,7 +67,7 @@ export const Navbar = () => {
             {
               icon: FaGithub,
               title: "GitHub",
-              href: "https://github.com/husker-nu/husker-gym",
+              href: "https://github.com/ninest/husker-gym",
             },
           ]}
         >
